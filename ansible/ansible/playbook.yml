@@ -1,6 +1,6 @@
 ---
 - name: Deploy HTML page to webserver
-  hosts: all
+  hosts: webserver
   become: yes
   vars_files:
     - vars.yml
@@ -22,11 +22,11 @@
       git:
         repo: "{{ github_repo_url }}"
         dest: /var/www/html
-        version: master
+        version: main
 
     - name: Deploy HTML page to webserver
       copy:
-        src: /var/www/html/index.html
+        src: /var/www/htmlindex.html
         dest: "{{ webserver_document_root }}/index.html"
         owner: www-data
         group: www-data

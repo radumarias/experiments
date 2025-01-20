@@ -1,2 +1,2 @@
 [webservers]
-webserver1 ansible_host=ansible-webserver-1 ansible_user=root
+webserver1 ansible_host=172.18.0.2 ansible_user=root

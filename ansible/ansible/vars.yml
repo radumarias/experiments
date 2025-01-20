@@ -1,0 +1,12 @@
+---
+# Variables for the Ansible playbook
+
+# GitHub repository URL
+github_repo_url: "https://github.com/radumarias/experiments"
+
+# Webserver document root
+webserver_document_root: "/var/www/html"
+
+# Other configuration parameters
+webserver_user: "www-data"
+webserver_group: "www-data"

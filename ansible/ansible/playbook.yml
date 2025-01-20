@@ -1,0 +1,33 @@
+---
+- name: Deploy HTML page to webserver
+  hosts: webserver
+  become: yes
+  vars_files:
+    - vars.yml
+
+  tasks:
+    - name: Install Apache webserver
+      apt:
+        name: apache2
+        state: present
+        update_cache: yes
+
+    - name: Start and enable Apache webserver
+      systemd:
+        name: apache2
+        state: started
+        enabled: yes
+
+    - name: Clone HTML page from GitHub repository
+      git:
+        repo: "{{ github_repo_url }}"
+        dest: /var/www/html
+        version: main
+
+    - name: Deploy HTML page to webserver
+      copy:
+        src: /var/www/htmlindex.html
+        dest: "{{ webserver_document_root }}/index.html"
+        owner: www-data
+        group: www-data
+        mode: '0644'

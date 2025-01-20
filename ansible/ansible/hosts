@@ -1,0 +1,2 @@
+[webservers]
+webserver1 ansible_host=webserver  ansible_user=root

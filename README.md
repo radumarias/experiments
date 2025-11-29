@@ -9,7 +9,7 @@ Feel free to fork, change, and use it however you want. We always appreciate it 
 How to contribute:
 - Please see [CONTRIBUTING.md](https://github.com/xoriors/rencfs/blob/main/.github/CONTRIBUTING.md)
 
-# Get in touch
+## Get in touch
 
 - Part of [xorio](https://xorio.rs/)
 - [hello@xorio.rs](mailto:hello@xorio.rs)

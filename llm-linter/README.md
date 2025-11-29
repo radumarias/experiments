@@ -10,4 +10,4 @@ Trying to see how an LLM can act as a static code analyzer similar to
 2. Then we can experiment to create some Claude Skills out of them, where we have more docs and maybe some code
 3. Expose as MPC server
 4. Integrate it in CI/CD with GitHub actions
-5. Transform clippy rules to LLM prompts and enhance them
+5. Transform clippy rules (and other linters rules) to LLM prompts or skills and use them to generate better code. This would help generate better code from the start, not just fix it afterward.

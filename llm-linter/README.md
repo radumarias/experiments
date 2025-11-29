@@ -6,7 +6,7 @@ Trying to see how an LLM can act as a static code analyzer similar to
 
 ## Approach
 
-1. First we try to create some prompts to use as system prompts or slash commands or sub-agents in claude code for ex to analyze some basic concepts of code #2
+1. First we try to create some prompts to use as system prompts or slash commands or sub-agents in claude code for ex to analyze some basic concepts of code #3
 2. Then we can experiment to create some Claude Skills out of them, where we have more docs and maybe some code
 3. Expose as MPC server
 4. Integrate it in CI/CD with GitHub actions

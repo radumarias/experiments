@@ -6,7 +6,7 @@ And given that the conflicted code was most likely not written by us, resolving 
 So we are experimenting with how AI agents could help mitigate this. After all, they will be the ones writing that code :)
 
 One idea is to use Claude Code skills to instruct the agent how it could help like
-- instructions on steps that would help
+- instructions on steps that would help, something similar to https://subagents.cc/
 - analyze previous commits to see how the code evolved
 - include in the skill any code that might help to be executed while investigating
 - ... open to suggestions
